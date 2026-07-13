@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+       
+        const domain = window.location.hostname;
+
+        let redirectUrl='https://google.com/';
+
+      
+        window.location.href = redirectUrl;
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, follow this <a id="fallback-link" href="#">link</a>.</p>
+    <script>
+        
+        document.getElementById('fallback-link').href = redirectUrl;
+    </script>
+</body>
+</html>
