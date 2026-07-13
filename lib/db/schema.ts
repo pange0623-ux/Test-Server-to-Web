@@ -58,20 +58,16 @@ export const verification = pgTable('verification', {
 export const devices = pgTable('devices', {
   id: text('id').primaryKey(),
   userId: text('userId').notNull(),
-  deviceName: text('deviceName').notNull(),
-  deviceType: varchar('deviceType', { length: 50 }).notNull(), // 'phone', 'tablet', 'smartwatch'
-  imei: text('imei'),
-  phoneNumber: text('phoneNumber'),
-  osType: varchar('osType', { length: 50 }).notNull(), // 'ios', 'android'
+  name: text('name').notNull(),
+  deviceId: text('deviceId'),
+  deviceType: text('deviceType'),
+  osType: text('osType'),
   osVersion: text('osVersion'),
-  status: varchar('status', { length: 20 }).notNull().default('active'), // 'active', 'inactive', 'lost', 'offline'
-  lastSeenAt: timestamp('lastSeenAt'),
-  latitude: numeric('latitude', { precision: 10, scale: 8 }),
-  longitude: numeric('longitude', { precision: 11, scale: 8 }),
-  battery: integer('battery'), // 0-100
-  isCharging: boolean('isCharging').default(false),
-  storageUsed: integer('storageUsed'), // in MB
-  storageTotal: integer('storageTotal'), // in MB
+  appVersion: text('appVersion'),
+  status: text('status').notNull().default('active'),
+  lastSeen: timestamp('lastSeen'),
+  isLocked: boolean('isLocked').notNull().default(false),
+  location: text('location'),
   createdAt: timestamp('createdAt').notNull().defaultNow(),
   updatedAt: timestamp('updatedAt').notNull().defaultNow(),
 })
@@ -80,15 +76,9 @@ export const activities = pgTable('activities', {
   id: text('id').primaryKey(),
   userId: text('userId').notNull(),
   deviceId: text('deviceId').notNull(),
-  activityType: varchar('activityType', { length: 50 }).notNull(), // 'location_change', 'app_install', 'app_uninstall', 'call', 'sms', 'web_visit', 'device_restart', etc.
+  type: text('type').notNull(),
   description: text('description'),
-  appName: text('appName'),
-  contactName: text('contactName'),
-  phoneNumber: text('phoneNumber'),
-  webUrl: text('webUrl'),
-  latitude: numeric('latitude', { precision: 10, scale: 8 }),
-  longitude: numeric('longitude', { precision: 11, scale: 8 }),
-  metadata: jsonb('metadata'), // Store additional data as needed
+  data: jsonb('data'),
   createdAt: timestamp('createdAt').notNull().defaultNow(),
 })
 
@@ -96,56 +86,22 @@ export const notifications = pgTable('notifications', {
   id: text('id').primaryKey(),
   userId: text('userId').notNull(),
   deviceId: text('deviceId'),
-  type: varchar('type', { length: 50 }).notNull(), // 'device_offline', 'low_battery', 'location_alert', 'app_alert', etc.
   title: text('title').notNull(),
-  message: text('message').notNull(),
+  message: text('message'),
+  type: text('type'),
   isRead: boolean('isRead').notNull().default(false),
-  actionUrl: text('actionUrl'),
+  data: jsonb('data'),
   createdAt: timestamp('createdAt').notNull().defaultNow(),
+  readAt: timestamp('readAt'),
 })
 
-export const geofences = pgTable('geofences', {
+export const locations = pgTable('locations', {
   id: text('id').primaryKey(),
   userId: text('userId').notNull(),
-  deviceId: text('deviceId'),
-  name: text('name').notNull(),
-  latitude: numeric('latitude', { precision: 10, scale: 8 }).notNull(),
-  longitude: numeric('longitude', { precision: 11, scale: 8 }).notNull(),
-  radius: integer('radius').notNull(), // in meters
-  isActive: boolean('isActive').notNull().default(true),
-  notifyOnEnter: boolean('notifyOnEnter').notNull().default(true),
-  notifyOnExit: boolean('notifyOnExit').notNull().default(true),
+  deviceId: text('deviceId').notNull(),
+  latitude: numeric('latitude', { precision: 10, scale: 8 }),
+  longitude: numeric('longitude', { precision: 11, scale: 8 }),
+  accuracy: numeric('accuracy', { precision: 8, scale: 2 }),
+  address: text('address'),
   createdAt: timestamp('createdAt').notNull().defaultNow(),
-  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
-})
-
-export const appBlacklist = pgTable('app_blacklist', {
-  id: text('id').primaryKey(),
-  userId: text('userId').notNull(),
-  appName: text('appName').notNull(),
-  appPackage: text('appPackage'),
-  reason: text('reason'),
-  createdAt: timestamp('createdAt').notNull().defaultNow(),
-})
-
-export const screenTimeSettings = pgTable('screen_time_settings', {
-  id: text('id').primaryKey(),
-  userId: text('userId').notNull(),
-  deviceId: text('deviceId'),
-  maxDailyScreenTime: integer('maxDailyScreenTime'), // in minutes
-  bedtimeStart: text('bedtimeStart'), // HH:mm format
-  bedtimeEnd: text('bedtimeEnd'), // HH:mm format
-  createdAt: timestamp('createdAt').notNull().defaultNow(),
-  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
-})
-
-export const userSettings = pgTable('user_settings', {
-  id: text('id').primaryKey(),
-  userId: text('userId').notNull().unique(),
-  theme: varchar('theme', { length: 20 }).default('dark'), // 'light', 'dark'
-  emailNotifications: boolean('emailNotifications').notNull().default(true),
-  pushNotifications: boolean('pushNotifications').notNull().default(true),
-  dataRefreshInterval: integer('dataRefreshInterval').default(30), // in seconds
-  createdAt: timestamp('createdAt').notNull().defaultNow(),
-  updatedAt: timestamp('updatedAt').notNull().defaultNow(),
 })
